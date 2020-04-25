@@ -116,12 +116,14 @@ class Modal extends Component {
       } else {
         Animated.timing(this.state.opacity, {
           toValue,
-          duration: animationDuration
+          duration: animationDuration,
+          useNativeDriver: true
         }).start();
 
         Animated.spring(this.state.scale, {
           toValue: toValue ? 1 : 0.8,
-          tension: animationTension
+          tension: animationTension,
+          useNativeDriver: true
         }).start(() => this.executeCallbacks(toValue === 1));
       }
     }
