@@ -1,5 +1,5 @@
 {
-  "name": "react-native-simple-modal",
+  "name": "@hoyleg/react-native-simple-modal",
   "version": "9.0.1",
   "description": "A simple JavaScript modal component for React Native.",
   "main": "index.js",
