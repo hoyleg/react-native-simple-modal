@@ -36,9 +36,9 @@ class Modal extends Component {
   };
 
   state = {
-    opacity: new Animated.Value(0),
-    scale: new Animated.Value(0.8),
-    offset: new Animated.Value(this.props.offset)
+    opacity: new Animated.Value(0, { useNativeDriver: true }),
+    scale: new Animated.Value(0.8, { useNativeDriver: true }),
+    offset: new Animated.Value(this.props.offset, { useNativeDriver: true })
   };
 
   UNSAFE_componentWillMount() {
@@ -185,7 +185,7 @@ class Modal extends Component {
   };
 
   animateOffset(offset) {
-    Animated.spring(this.state.offset, { toValue: offset }).start();
+    Animated.spring(this.state.offset, { toValue: offset, useNativeDriver: true }).start();
   }
 }
 
