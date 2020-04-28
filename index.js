@@ -36,9 +36,9 @@ class Modal extends Component {
   };
 
   state = {
-    opacity: new Animated.Value(0, { useNativeDriver: true }),
-    scale: new Animated.Value(0.8, { useNativeDriver: true }),
-    offset: new Animated.Value(this.props.offset, { useNativeDriver: true })
+    opacity: new Animated.Value(0),
+    scale: new Animated.Value(0.8),
+    offset: new Animated.Value(this.props.offset)
   };
 
   UNSAFE_componentWillMount() {
