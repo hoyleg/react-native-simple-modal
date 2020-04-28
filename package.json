@@ -1,6 +1,6 @@
 {
   "name": "@hoyleg/react-native-simple-modal",
-  "version": "10.0.2",
+  "version": "10.0.3",
   "description": "A simple JavaScript modal component for React Native.",
   "main": "index.js",
   "types": "index.d.ts",
